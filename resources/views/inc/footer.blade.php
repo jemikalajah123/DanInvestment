@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">
-    <div style="background-color: #343a40;">
+    <div class="bg-secondary">
       <div class="container">
         <!-- Grid row-->
         <div class="row py-4 d-flex align-items-center">
