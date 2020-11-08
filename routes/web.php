@@ -17,7 +17,9 @@ Route::get('/',  'PagesController@index')->name('welcome');
 Route::get('/about',  'PagesController@about')->name('about');
 Route::get('/services',  'PagesController@services')->name('services');
 Route::get('/estimate',  'PagesController@estimate')->name('estimate');
+Route::post('/invest',  'PagesController@store')->name('store')->middleware('verified');
+Route::post('/estimate',  'PagesController@getEstimate')->name('calculate')->middleware('verified');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
