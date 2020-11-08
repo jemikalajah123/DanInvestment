@@ -56,7 +56,7 @@ class PagesController extends Controller
     public function services(){
         $data = array (
             'title'=> 'Our Services',
-            'services' => ['Forex Trading','Web design', 'Programming', 'Marketing Intelligence']
+            'services' => ['Forex Trading','Product management and design', 'Business Consulting', 'Marketing Intelligence']
         );
         return view('pages.services')->with( $data);
     }
