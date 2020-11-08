@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="row">
-                <p>This is the best forex investment platform, i have worked with...</p>
+                <p class="mb-5">This is the best forex investment platform, i have worked with...</p>
             </div>
         </div>
         <div class="w-100 mt-n5 mb-2 col-sm col-md-4 ">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="row">
-                <p>I love DanInvestment, it is quick and efficent to use.</p>
+                <p class="mb-5">I love DanInvestment, it is quick and efficent to use.</p>
             </div>
         </div>
         <div class="w-100 mt-n5 mb-2 col-sm col-md-4 ">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="row">
-                <p>Thank you for making my money work for me.</p>
+                <p class="mb-5">Thank you for making my money work for me.</p>
             </div>
         </div>
     </div>
