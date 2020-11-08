@@ -19,7 +19,7 @@ class PagesController extends Controller
     }
     public function  calculate(){
         $diff = abs(strtotime($this->end) - strtotime($this->start));
-        $duration = floor($diff / (365 * 60* 60 * 24)); //duration is constant for 6 months
+        $duration = round(($diff / (365 * 60* 60 * 24)),3); //duration is constant for 6 months
         return $this->earning = $this->deposit * (1 + ($this->interest/100)) ** ($duration);
     }
     /**

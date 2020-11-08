@@ -5,6 +5,11 @@
         <div class="row justify-content-center">
             <div class="col-md-6 p-5 mt-5 mb-5" style="border: 1px ;padding: 2px;box-shadow: 5px 10px #6C757D;">
                 <div class="d-flex flex-column ml-auto mt-5">
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                     </span>
+                    @enderror
                     <h2 class="sec__two-header">
                         Get Estimate
                     </h2><br>
