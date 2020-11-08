@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row ">
         <div class="col-md-4">
-             <p><img class="w-100 d-none d-lg-block" style="height: 800px" src="{{url('/assets/images/morgan-housel-Xl-6WjqcppQ-unsplash.jpg')}}"></p>
+             <p><img class="w-100 d-none d-md-block" style="height: 800px" src="{{url('/assets/images/morgan-housel-Xl-6WjqcppQ-unsplash.jpg')}}"></p>
         </div>
         <div class="col-md-8">
                 <div class="card-body">
