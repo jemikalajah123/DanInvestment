@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary shadow-sm">
   <div class="container">
       <a class="navbar-brand" href="{{ url('/') }}">
-          <img class="w-75 h-50" style="border-radius: 5px" src="{{url('/assets/images/dan.png')}}">
+          <span><img class="w-75 h-50" style="border-radius: 5px" src="{{url('/assets/images/dan.png')}}"></span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
           <span class="navbar-toggler-icon"></span>
