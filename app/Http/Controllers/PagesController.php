@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Investment;
 use Illuminate\Http\Request;
+use DateTime;
 
 class PagesController extends Controller
 {
@@ -39,6 +40,7 @@ class PagesController extends Controller
         $earn = $this->getEarning();
         $end = $this->end;
         $amount= $this->deposit;
+        redirect('/estimate')->with(['success' => 'Your interest was calculated succesfully']);
         return view('pages.estimate')->with(['earn' => $earn,'amount' => $amount]);
     }
     /**
@@ -50,27 +52,30 @@ class PagesController extends Controller
     public function store(Request $request){
         $this->deposit = $request->input('amount');
         if($this->deposit < 50000){
-            return  view('pages.estimate')->with('failure', 'Please enter an amount greater than N49999');
+            return  redirect('/estimate')->with(['error' => 'Please enter an amount greater than N49999']);
         }else{
-            $this->interest = 20;
-            $this->calculate();
+            $this->interest = 25;
             $date = new DateTime('now');
-            $date->modify('+1 month'); // or you can use '-30 day' for deduct
-            $date = $date->format('Y-m-d h:i:s');
+            $months = 2;
+            $start_date = $date->format('Y-m-d h:i:s');
+            $end_date = $date->modify('+'.$months.' month')->format('Y-m-d h:i:s'); // or you can use '-30 day' for deduct
+            $this->start = $start_date;
+            $this->end = $end_date;
+            $this->calculate();
             //call to db
             $invest = new Investment();
             $invest->user_id = auth()->user()->id;
             $invest->present_value = $this->deposit;
             $invest->future_value = $this->getEarning();
             $invest->payment_made_status = false;
-            $invest->pay_day = $date;
+            $invest->pay_day = $end_date;
             $invest->save();
 
             $account = [ 'name' => 'Philip Jemikalajah',
                             'bank' => 'Zenith Bank',
                             'number' => '2110491426'
                 ];
-            return  view('pages.estimate')->with('success', 'Please make payment to ' + $account.name + ' whose bank name is ' + $account.bank + ' and account number is ' + $account.number + ' .' );
+            return  redirect('/estimate')->with('success', 'Your investment is successful, Please make payment to ' . $account['name'] . ' whose bank name is ' . $account['bank'] . ' and account number is ' . $account['number'] . ' .' );
 
         }
     }

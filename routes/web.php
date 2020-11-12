@@ -19,7 +19,13 @@ Route::get('/services',  'PagesController@services')->name('services');
 Route::get('/estimate',  'PagesController@estimate')->name('estimate');
 Route::post('/invest',  'PagesController@store')->name('store')->middleware('verified');
 Route::post('/estimate',  'PagesController@getEstimate')->name('calculate')->middleware('verified');
+//Route::prefix('admin')->group(function(){
+//
+//});
+Route::get('/admin/dashboard', 'AdminController@dashboard')->name('admin.route')->middleware('admin');
+Route::put('/admin/dashboard/email/{id}/{pk}', 'AdminController@sendEmail')->middleware('admin');
+Route::put('/admin/dashboard/payment/{id}', 'AdminController@updatePayment')->middleware('admin');
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('home');
