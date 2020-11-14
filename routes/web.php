@@ -18,7 +18,7 @@ Route::get('/about',  'PagesController@about')->name('about');
 Route::get('/services',  'PagesController@services')->name('services');
 Route::get('/estimate',  'PagesController@estimate')->name('estimate');
 Route::post('/invest',  'PagesController@store')->name('store')->middleware('verified');
-Route::post('/estimate',  'PagesController@getEstimate')->name('calculate')->middleware('verified');
+Route::post('/estimate',  'PagesController@getEstimate')->name('calculate');
 //Route::prefix('admin')->group(function(){
 //
 //});

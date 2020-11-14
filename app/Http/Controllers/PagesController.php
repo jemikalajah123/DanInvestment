@@ -8,9 +8,7 @@ use DateTime;
 
 class PagesController extends Controller
 {
-    private $interest;
-    private $start;
-    private $end;
+    private $interest = 20;
     private $deposit;
     private  $earning;
     public function index(){
@@ -20,28 +18,8 @@ class PagesController extends Controller
         return view('pages.estimate');
     }
     public function  calculate(){
-        $diff = abs(strtotime($this->end) - strtotime($this->start));
-        $duration = round(($diff / (365 * 60* 60 * 24)),3); //duration is constant for 6 months
-        $earning = $this->deposit * (1 + ($this->interest/100)) ** ($duration);
-        $this->setEarning($earning);
-    }
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function getEstimate(Request $request){
-        $this->deposit = $request->input('amount');
-        $this->interest = $request->input('interest');
-        $this->start = $request->input('start');
-        $this->end = $request->input('end');
-        $this->calculate();
-        $earn = $this->getEarning();
-        $end = $this->end;
-        $amount= $this->deposit;
-        redirect('/estimate')->with(['success' => 'Your interest was calculated succesfully']);
-        return view('pages.estimate')->with(['earn' => $earn,'amount' => $amount]);
+        $earning = $this->deposit + (($this->interest/100) * $this->deposit);
+        $this->setEarning(round($earning),2);
     }
     /**
      * Store a newly created resource in storage.
@@ -54,13 +32,10 @@ class PagesController extends Controller
         if($this->deposit < 50000){
             return  redirect('/estimate')->with(['error' => 'Please enter an amount greater than N49999']);
         }else{
-            $this->interest = 25;
             $date = new DateTime('now');
-            $months = 2;
+            $days = 35;
             $start_date = $date->format('Y-m-d h:i:s');
-            $end_date = $date->modify('+'.$months.' month')->format('Y-m-d h:i:s'); // or you can use '-30 day' for deduct
-            $this->start = $start_date;
-            $this->end = $end_date;
+            $end_date = $date->modify('+'.$days.'day')->format('Y-m-d h:i:s'); // or you can use '-30 day' for deduct
             $this->calculate();
             //call to db
             $invest = new Investment();

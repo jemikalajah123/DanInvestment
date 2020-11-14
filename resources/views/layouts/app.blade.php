@@ -10,7 +10,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -33,8 +32,5 @@
         </main>
         @include('inc.footer')
     </div>
-    <script>
-    CKEDITOR.replace( 'article-ckeditor' );
-    </script>
 </body>
 </html>

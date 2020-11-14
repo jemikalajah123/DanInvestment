@@ -14,10 +14,10 @@
                         WHAT WE DO
                     </h2><br>
                     <p class="sec__two-paragrapgh">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut.Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut.
+                        Dan investment is a financial company that specialises in Forex trading.
+                        We trade in the Forex market and also reach out to our customers with 20% return on their investment after 25 working days.
+                        <br>We are also a company that groom young people who are also interested in plugging themselves into the Forex market.
+                        With Dan investment we guarantee you maximum security and 100% satisfaction.
                     </p><br><br>
                     <a class="btn btn-info top__button" href="/estimate" role="button">Get an Estimate</a>
                 </div>
@@ -32,13 +32,13 @@
 
                 </h2><br>
                 <p class="sec__two-paragrapgh">
-                    1. Get an Estimate for your Forest Investment
+                    1. Get an Estimate for your Forex Investment.
                 </p><br>
                 <p class="sec__two-paragrapgh">
-                    2. Create an Account
+                    2. Create an Account.
                 </p><br>
                 <p class="sec__two-paragrapgh">
-                    3. Get Paid when your investment matures
+                    3. Get Paid when your investment matures.
                 </p><br>
             </div>
         </div>

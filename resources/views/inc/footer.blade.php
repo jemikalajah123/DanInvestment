@@ -52,8 +52,8 @@
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold"><strong>DanInvestment</strong></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>Here you can register as blogger and create a blog post with images attached with easily.
-             We believe everyone has a story to share, and the world has to hear it. Even, if they do not want to....</p>
+          <p>Dan investment is a financial company that specialises in Forex trading.
+              We trade in the Forex market and also reach out to our customers with 20% return on their investment after 25 working days.</p>
         </div>
         <!-- Grid column -->
 
@@ -64,16 +64,16 @@
           <h6 class="text-uppercase font-weight-bold">Products</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a style="color: black" href="#!">Investify</a>
+            <a style="color: black" href="/estimate">Investify</a>
           </p>
           <p>
-            <a style="color: black" href="#!">Programming</a>
+            <a style="color: black" href="/services">Programming</a>
           </p>
           <p>
-            <a style="color: black" href="#!">Web Design</a>
+            <a style="color: black" href="/services">Web Design</a>
           </p>
           <p>
-            <a style="color: black" href="#!">Marketing Intelligence</a>
+            <a style="color: black" href="/services">Marketing Intelligence</a>
           </p>
 
         </div>
@@ -92,7 +92,7 @@
             <a style="color: black" href="#!">Become an Affiliate</a>
           </p>
           <p>
-            <a style="color: black" href="/register">Join Our Bloggers</a>
+            <a style="color: black" href="#!">Join Our Bloggers</a>
           </p>
           <p>
             <a style="color: black" href="#!">Help</a>
@@ -107,7 +107,7 @@
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold"><strong>Contact</strong></h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p><i class="fas fa-home mr-3"></i> Ikeja, Lagos, Nigeria</p>
+          <p><i class="fas fa-home mr-3"></i> Abeokuta, Ogun , Nigeria</p>
           <p> <i class="fas fa-envelope mr-3"></i> danInvest@gmail.com</p>
           <p><i class="fas fa-phone mr-3"></i> +234 814 6818 593</p>
           <p><i class="fas fa-print mr-3"></i> +234 901 9929 307</p>

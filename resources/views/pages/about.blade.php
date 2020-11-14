@@ -4,10 +4,8 @@
 
     <h1 class="text-center mt-3"><?php echo $title; ?></h1>
     <p> <strong>Dan Investments, is the easiest and quickest way to invest in Forex Trading .</strong></p>
-    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.  It is a great idea to invest with us today ......so get to work....
+    <p>Dan investment is a financial company that deals in Forex. We are a company that guarantees financial security and also gives our customers 20% return on  investment not less than N50,000.
+        Dan investment is a company that seeks to reach out to clients and also deliver maximally in terms of financial security. We are a company you want to invest in and want to keep investing in.Join Us Now
         <a class="btn btn-info btn-sm" href="/register" role="button">Register</a> </p><br>
     <h2 class="sec__two-header text-center">
         What Customers are saying?
@@ -19,13 +17,14 @@
                     <img class="w-100 h-100" src="https://source.unsplash.com/user/erondu" />
                 </div>
                 <div class="">
-                    <p class="my-2" style="color: #32E0C4;"><strong>Nefemi Omotola</strong></p>
+                    <p class="my-2" style="color: #32E0C4;"><strong>Temitope Bello</strong></p>
                     <span style="color: #938F91; font-weight:700">lagos</span>
                     <p style="color: #C4C4C4">Nigeria</p>
                 </div>
             </div>
             <div class="row">
-                <p class="mb-5">This is the best forex investment platform, i have worked with...</p>
+                <p class="mb-5">I invested with Dan Investment and it has to be the best things that has happened to me this year.
+                    They are reliable, safe and secure.</p>
             </div>
         </div>
         <div class="w-100 mt-n5 mb-2 col-sm col-md-4 ">
@@ -34,13 +33,14 @@
                     <img class="w-100 h-100" src="https://source.unsplash.com/user/erondu" />
                 </div>
                 <div class="">
-                    <p class="my-2" style="color: #32E0C4;"><strong>Jennifer Oakley</strong></p>
+                    <p class="my-2" style="color: #32E0C4;"><strong>Michael Ifeanyi</strong></p>
                     <span style="color: #938F91; font-weight:700">Chicago</span>
                     <p style="color: #C4C4C4">United states</p>
                 </div>
             </div>
             <div class="row">
-                <p class="mb-5">I love DanInvestment, it is quick and efficent to use.</p>
+                <p class="mb-5">Investing with Dan Investment is the best thing you could do for yourself in terms of financial safety.
+                    They deliver when expected and they are trustworthy.</p>
             </div>
         </div>
         <div class="w-100 mt-n5 mb-2 col-sm col-md-4 ">
@@ -49,13 +49,13 @@
                     <img class=" w-100 h-100" src="https://source.unsplash.com/user/erondu" />
                 </div>
                 <div class="">
-                    <p class="my-2" style="color: #32E0C4;"><strong>Nwafor Livingstone</strong></p>
+                    <p class="my-2" style="color: #32E0C4;"><strong>Korede Akanbi</strong></p>
                     <span style="color: #938F91; font-weight:700;">Abuja</span>
                     <p style="color: #C4C4C4">Nigeria</p>
                 </div>
             </div>
             <div class="row">
-                <p class="mb-5">Thank you for making my money work for me.</p>
+                <p class="mb-5">I have alot of fears investing online, but investing with Dan Investment isn't something I regret.</p>
             </div>
         </div>
     </div>
