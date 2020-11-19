@@ -80,7 +80,6 @@
             let calculate = Number(amount) + Number((0.2 *  amount));
             earn.textContent = calculate;
             invested_amount.textContent =amount;
-            console.log(btn);
             btn.value = "Invest Now";
         }
     </script>

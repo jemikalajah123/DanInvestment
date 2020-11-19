@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Investment;
 use App\User;
+use DateTime;
 
 use Illuminate\Http\Request;
 
@@ -52,13 +53,18 @@ class AdminController extends Controller
             'title' => 'Mail from Dan Investment',
             'body' => 'Your investment money was received successfully, Thanks for trusting dan Investment firm.'
         ];
+        $date = new DateTime('now');
+        $days = 35;
+        $end_date = $date->modify('+'.$days.'day')->format('Y-m-d h:i:s');
         if($investment->payment_made_status == false || $investment->send_email_status == false){
             $investment->payment_made_status = true;
             $investment->send_email_status = true;
+            $investment->pay_day = $end_date;
+            $investment->created_at = $date;
             $investment->save();
             \Mail::to($user->email)->send(new \App\Mail\InvestmentMail($details));
 //
-//            dd("Email is Sent.");
+            dd("Email is Sent.");
         }else{
             return redirect('/admin/dashboard')->with('error', 'Payment email Confirmation has been sent already');
 
